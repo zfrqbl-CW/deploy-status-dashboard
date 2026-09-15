@@ -5,13 +5,17 @@ const PORT = process.env.PORT || 3000;
 
 // These two values are the ones we edit between deploys later in the
 // article to demonstrate Velocity's auto deploy and rollback behavior.
-const APP_VERSION = 'v1.0.0';
-const THEME_COLOR = '#2563eb'; // blue
+const APP_VERSION = 'v2.0.0';
+const THEME_COLOR = '#f97316'; // orange
 
 const FEATURES = [
   {
     title: 'Core Deploy',
     description: 'Base application deployed straight from the connected Git repository.',
+  },
+  {
+    title: 'Auto Deploy Enabled',
+    description: 'This build shipped automatically after a git push, no manual redeploy step needed.',
   },
 ];
 
